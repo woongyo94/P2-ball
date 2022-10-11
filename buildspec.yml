@@ -20,5 +20,7 @@ artifacts:
     - .idea/misc.xml
     - .idea/modules.xml
     - .idea/vcs.xml
-   
+    - scripts/start.sh
+    - scripts/stop.sh
+    - appspec.yml
   discard-paths: yes
