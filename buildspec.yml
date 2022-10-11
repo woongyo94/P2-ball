@@ -1,0 +1,24 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto17
+  build:
+    commands:
+      - echo Building
+  post_build:
+    commands:
+      ## aws s3 cp target/*.war s3://myhhbucket23 . We don't need this step.
+      - echo Build completed
+artifacts:
+  files:
+    - main.py
+    - .idea/.inspectionProfiles/profiles_settings.xml
+    - .idea/.gitignore
+    - .idea/ball.iml
+    - .idea/misc.xml
+    - .idea/modules.xml
+    - .idea/vcs.xml
+   
+  discard-paths: yes
