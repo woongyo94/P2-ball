@@ -1,8 +1,16 @@
 version: 0.0
 os: windows
+
 files:
   - source: /
     destination: C:\Users\Administrator\Desktop\ball
+
+file_exists_behavior: OVERWRITE
+
 hooks:
-  ApplicationStart:
-    - location: start.sh
+  AfterInstall:
+    - location: server_start.sh
+      timeout: 300
+  ApplicationStop:
+    - location: server_stop.sh
+      timeout: 300
