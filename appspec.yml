@@ -5,4 +5,4 @@ files:
     destination: C:\Users\Administrator\Desktop\ball
 hooks:
   ApplicationStart:
-    - location: scripts/start_server.sh
+    - location: scripts/start.sh
