@@ -12,8 +12,8 @@ hooks:
     - location: \before-install.bat
       timeout: 900
   AfterInstall:
-    - location: server_start.sh
+    - location: server_start.bat
       timeout: 300
   ApplicationStop:
-    - location: server_stop.sh
+    - location: server_stop.bat
       timeout: 300
