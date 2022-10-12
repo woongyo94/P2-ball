@@ -13,6 +13,8 @@ phases:
       - echo Build completed
 artifacts:
   files:
+    - appspec.yml
+    - scripts/start.sh
     - main.py
     - .idea/.inspectionProfiles/profiles_settings.xml
     - .idea/.gitignore
@@ -20,6 +22,4 @@ artifacts:
     - .idea/misc.xml
     - .idea/modules.xml
     - .idea/vcs.xml
-    - appspec.yml
-    - start.sh
   discard-paths: yes
