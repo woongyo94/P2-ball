@@ -8,6 +8,9 @@ files:
 file_exists_behavior: OVERWRITE
 
 hooks:
+  BeforeInstall:
+    - location: \before-install.bat
+      timeout: 900
   AfterInstall:
     - location: server_start.sh
       timeout: 300
