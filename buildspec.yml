@@ -21,5 +21,5 @@ artifacts:
     - .idea/modules.xml
     - .idea/vcs.xml
     - appspec.yml
-    - start_server.sh
+    - start.sh
   discard-paths: yes
